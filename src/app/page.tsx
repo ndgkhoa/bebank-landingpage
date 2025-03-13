@@ -1,9 +1,14 @@
+import dynamic from 'next/dynamic';
+
+const WorkHero = dynamic(() => import('@/app/_components/work-hero'));
+const Contact = dynamic(() => import('@/app/_components/contact'));
+
 const Home = () => {
   return (
-    <>
-      <h1 className="text-2xl font-bold">Home</h1>
-      <p>My Home</p>
-    </>
+    <div className="flex flex-col gap-[6rem]">
+      <WorkHero />
+      <Contact />
+    </div>
   );
 };
 
