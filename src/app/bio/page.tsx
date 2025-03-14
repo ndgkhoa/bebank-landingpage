@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic';
-import { memo } from 'react';
 
 const HeroBio = dynamic(() => import('@/app/bio/_components/hero-bio'));
 const AboutAli = dynamic(() => import('@/app/bio/_components/about-ali'));
@@ -8,7 +7,7 @@ const Roots = dynamic(() => import('@/app/bio/_components/roots'));
 const AwardsRecognitions = dynamic(() => import('@/app/bio/_components/awards-recognitions'));
 const Contact = dynamic(() => import('@/app/_components/contact'));
 
-const Bio = memo(() => {
+const Bio = () => {
   return (
     <div className="space-y-[6rem]">
       <HeroBio />
@@ -19,6 +18,6 @@ const Bio = memo(() => {
       <Contact />
     </div>
   );
-});
+};
 
 export default Bio;

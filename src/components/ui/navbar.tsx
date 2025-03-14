@@ -20,7 +20,7 @@ const Navbar = memo(() => {
             </Link>
           </li>
           <li>
-            <Link className="hover:underline" href="/contract" onClick={() => setTheme('light')}>
+            <Link className="hover:underline" href="/contact" onClick={() => setTheme('light')}>
               Contact
             </Link>
           </li>
