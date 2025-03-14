@@ -1,9 +1,11 @@
 import { ReactNode } from 'react';
 
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 interface HeroProps {
   title: string;
+  hasBackground?: boolean;
   children: ReactNode;
   className?: string;
 }
@@ -13,12 +15,22 @@ interface HeroSectionProps {
   className?: string;
 }
 
-export const Hero = ({ title, children, className }: HeroProps) => (
-  <section>
-    <h1 className={cn('text-end text-[16rem] font-semibold tracking-tighter', className)}>
+export const Hero = ({ title, hasBackground, children, className }: HeroProps) => (
+  <section className="relative">
+    <h1
+      className={cn(
+        'relative z-10 text-end text-[16rem] font-semibold tracking-tighter',
+        className
+      )}
+    >
       {title}
     </h1>
-    <div className="flex justify-between">{children}</div>
+    {hasBackground && (
+      <div className="absolute top-10 right-10 z-0">
+        <Image src="/images/bio.jpg" alt="bio" width={750} height={750} loading="lazy" />
+      </div>
+    )}
+    <div className="relative z-10 flex justify-between">{children}</div>
   </section>
 );
 

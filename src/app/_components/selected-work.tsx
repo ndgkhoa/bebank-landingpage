@@ -21,7 +21,7 @@ const SelectedWork = memo(() => {
         </div>
         <div />
         <div className="col-span-3">
-          <Image src="/images/shark.jpg" alt="shark" width={800} height={200} loading="lazy" />
+          <Image src="/images/shark.jpg" alt="shark" width={800} height={300} loading="lazy" />
         </div>
 
         <div className="col-span-2">
@@ -38,7 +38,7 @@ const SelectedWork = memo(() => {
         </div>
         <div />
         <div className="col-span-3">
-          <Image src="/images/shark.jpg" alt="shark" width={800} height={200} loading="lazy" />
+          <Image src="/images/shark.jpg" alt="shark" width={800} height={300} loading="lazy" />
         </div>
       </div>
     </Container>

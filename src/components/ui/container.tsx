@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
 
-interface ContainerProps {
+interface ContentProps {
   contentName: string;
   title?: string;
   children: ReactNode;
 }
 
-const Container = ({ contentName, title, children }: ContainerProps) => {
+const Container = ({ contentName, title, children }: ContentProps) => {
   return (
     <div className="grid grid-cols-4">
       <p className="col-span-1 font-semibold">{contentName}</p>
