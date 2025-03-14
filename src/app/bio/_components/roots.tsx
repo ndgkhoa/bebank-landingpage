@@ -24,7 +24,7 @@ const Roots = memo(() => {
           <p>N 30.048819°</p>
           <p>E 31.243666°</p>
         </div>
-        <MediaCard key={item.imageName} item={item} />
+        <MediaCard item={item} />
       </div>
     </Container>
   );

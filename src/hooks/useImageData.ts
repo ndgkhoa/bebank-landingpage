@@ -28,9 +28,8 @@ const useImageData = () => {
       imageUrl: '/images/friend.jpg',
       imageName: 'Independent Agency Showcase - Cannes / FR',
       leftImageText:
-        'His directorial debut, “Never Say No to Panda” won him a Gold Lion in Cannes, and with over 90-million youtube views, was named by the Guardian as “one of the most watched viral campaigns of all time.” Nine years later, Ali has directed more than sixty commercials for the likes of Diesel, Google, Coca-Cola, Budweiser and Amazon.',
+        'His directorial debut, “Never Say No to Panda” won him a Gold Lion in Cannes, and with over 90-million youtube views, was named by the Guardian as “one of the most watched viral campaigns of all time.”',
     },
-    
   ];
 
   return { data: imageData };
