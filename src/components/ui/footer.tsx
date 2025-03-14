@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 const Footer = memo(() => {
   return (
-    <footer className="flex justify-between py-12">
+    <footer className="flex justify-between pt-[8rem] pb-[3rem]">
       <p>All Rights Reserved © 2020</p>
       <Link href="https://www.exoape.com/">Alitwotimes x Exo Ape</Link>
       <Button

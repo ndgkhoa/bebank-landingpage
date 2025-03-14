@@ -6,11 +6,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import Content from '@/components/ui/content';
+import Container from '@/components/ui/container';
 
 const Contact = memo(() => {
   return (
-    <Content contentName="Contact" title="Get one touch">
+    <Container contentName="CONTACT" title="Get one touch">
       <div>
         <p className="w-1/2 text-[4rem] tracking-tighter">
           I'M NOTORIOUSLY SLOW AT GETTING BACK TO EMAILS
@@ -18,25 +18,29 @@ const Contact = memo(() => {
         <p className="text-xl">In a hurry? please contact my awesome producers</p>
       </div>
 
-      <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>Is it styled?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It comes with default styles that matches the other components&apos; aesthetic.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-3">
-          <AccordionTrigger>Is it animated?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
-          </AccordionContent>
-        </AccordionItem>
+      <Accordion type="single" collapsible className="w-3/4">
+        {Array(4)
+          .fill(null)
+          .map((_, index) => (
+            <AccordionItem key={index} value={index + ''}>
+              <AccordionTrigger>United Kingdom</AccordionTrigger>
+              <AccordionContent>
+                <div className="flex">
+                  <div className="w-1/4" />
+                  <div className="w-3/4 space-y-1.5">
+                    <p>Arts & Sciences</p>
+                    <p>
+                      Suite 2, 25-26 Dering Street, Mayfair London W1S 1AT +44 (0) 786 797 1545
+                      james@artsandsciences.com
+                    </p>
+                    <p>uk.artsandsciences.com</p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
       </Accordion>
-    </Content>
+    </Container>
   );
 });
 

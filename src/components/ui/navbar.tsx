@@ -3,7 +3,7 @@ import { memo } from 'react';
 
 const Navbar = memo(() => {
   return (
-    <header className="pt-24">
+    <header className="py-24">
       <nav>
         <ul className="flex justify-between">
           <li className="flex gap-4">

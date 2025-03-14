@@ -15,7 +15,7 @@ interface HeroSectionProps {
 
 export const Hero = ({ title, children, className }: HeroProps) => (
   <section>
-    <h1 className={cn('text-end text-[18rem] font-semibold tracking-tighter', className)}>
+    <h1 className={cn('text-end text-[16rem] font-semibold tracking-tighter', className)}>
       {title}
     </h1>
     <div className="flex justify-between">{children}</div>

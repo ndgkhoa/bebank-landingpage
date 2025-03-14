@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 import { Hero, HeroSection } from '@/components/ui/hero';
 
-const WorkHero = memo(() => {
+const HeroWork = memo(() => {
   return (
     <Hero title="ali ali">
       <HeroSection>
@@ -25,4 +25,4 @@ const WorkHero = memo(() => {
   );
 });
 
-export default WorkHero;
+export default HeroWork;
