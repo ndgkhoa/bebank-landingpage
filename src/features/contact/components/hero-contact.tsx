@@ -1,10 +1,8 @@
-import { memo } from 'react';
+import { Hero, HeroSection } from '~/components/ui/hero';
+import InfoList from '~/features/home/components/info-list';
+import Container from '~/components/ui/container';
 
-import { Hero, HeroSection } from '@/components/ui/hero';
-import InfoList from '@/app/_components/info-list';
-import Container from '@/components/ui/container';
-
-const HeroContact = memo(() => {
+const HeroContact = () => {
   return (
     <Hero title="Get in touch" className="text-start">
       <HeroSection>
@@ -24,6 +22,6 @@ const HeroContact = memo(() => {
       </HeroSection>
     </Hero>
   );
-});
+};
 
 export default HeroContact;

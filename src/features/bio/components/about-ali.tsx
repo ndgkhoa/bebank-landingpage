@@ -1,11 +1,9 @@
-import { memo } from 'react';
+import Container from '~/components/ui/container';
+import { MediaCard } from '~/components/ui/media-card';
+import useImageList from '~/features/home/hooks/use-media-list';
 
-import Container from '@/components/ui/container';
-import { MediaCard } from '@/app/bio/_components/media-card';
-import useImageData from '@/hooks/useImageData';
-
-const AboutAli = memo(() => {
-  const { data } = useImageData();
+const AboutAli = () => {
+  const { data } = useImageList();
 
   return (
     <Container contentName="ABOUT ALI">
@@ -22,6 +20,6 @@ const AboutAli = memo(() => {
       <MediaCard item={data[3]} />
     </Container>
   );
-});
+};
 
 export default AboutAli;

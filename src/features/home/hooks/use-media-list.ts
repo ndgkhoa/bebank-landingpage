@@ -1,5 +1,5 @@
-const useImageData = () => {
-  const imageData = [
+const useMediaList = () => {
+  const mediaList = [
     {
       imageUrl: '/images/nature.jpg',
       imageName: 'American University - Cairo / EG',
@@ -32,7 +32,7 @@ const useImageData = () => {
     },
   ];
 
-  return { data: imageData };
+  return { data: mediaList };
 };
 
-export default useImageData;
+export default useMediaList;

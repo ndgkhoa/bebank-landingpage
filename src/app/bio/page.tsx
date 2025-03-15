@@ -1,22 +1,23 @@
 import dynamic from 'next/dynamic';
 
-const HeroBio = dynamic(() => import('@/app/bio/_components/hero-bio'));
-const AboutAli = dynamic(() => import('@/app/bio/_components/about-ali'));
-const ViralCampaign = dynamic(() => import('@/app/bio/_components/viral-campaign'));
-const Roots = dynamic(() => import('@/app/bio/_components/roots'));
-const AwardsRecognitions = dynamic(() => import('@/app/bio/_components/awards-recognitions'));
-const Contact = dynamic(() => import('@/app/_components/contact'));
+import PageLayout from '~/components/layout/page-layout';
+const HeroBio = dynamic(() => import('~/features/bio/components/hero-bio'));
+const AboutAli = dynamic(() => import('~/features/bio/components/about-ali'));
+const ViralCampaign = dynamic(() => import('~/features/bio/components/viral-campaign'));
+const Roots = dynamic(() => import('~/features/bio/components/roots'));
+const AwardsRecognitions = dynamic(() => import('~/features/bio/components/awards-recognitions'));
+const Contact = dynamic(() => import('~/features/home/components/contact'));
 
 const Bio = () => {
   return (
-    <div className="space-y-[6rem]">
+    <PageLayout>
       <HeroBio />
       <AboutAli />
       <ViralCampaign />
       <Roots />
       <AwardsRecognitions />
       <Contact />
-    </div>
+    </PageLayout>
   );
 };
 

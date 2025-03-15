@@ -1,5 +1,5 @@
-const useAwardData = () => {
-  const awardData = [
+const useAwardList = () => {
+  const awardList = [
     {
       competition: 'The One Show',
       prize: 'Gold',
@@ -27,7 +27,7 @@ const useAwardData = () => {
     },
   ];
 
-  return { data: awardData };
+  return { data: awardList };
 };
 
-export default useAwardData;
+export default useAwardList;

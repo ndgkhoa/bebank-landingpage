@@ -1,12 +1,10 @@
-import { memo } from 'react';
-
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
-import Container from '@/components/ui/container';
+} from '~/components/ui/accordion';
+import Container from '~/components/ui/container';
 
 export const ContactTable = () => (
   <Accordion type="single" collapsible className="w-3/4">
@@ -22,7 +20,7 @@ export const ContactTable = () => (
                 <p>Arts & Sciences</p>
                 <p>
                   Suite 2, 25-26 Dering Street, Mayfair London W1S 1AT +44 (0) 786 797 1545
-                  james@artsandsciences.com
+                  james~artsandsciences.com
                 </p>
                 <p>uk.artsandsciences.com</p>
               </div>
@@ -33,7 +31,7 @@ export const ContactTable = () => (
   </Accordion>
 );
 
-const Contact = memo(() => {
+const Contact = () => {
   return (
     <Container contentName="CONTACT" title="Get one touch">
       <div>
@@ -45,6 +43,6 @@ const Contact = memo(() => {
       <ContactTable />
     </Container>
   );
-});
+};
 
 export default Contact;

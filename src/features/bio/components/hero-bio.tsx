@@ -1,9 +1,7 @@
-import { memo } from 'react';
+import { Hero, HeroSection } from '~/components/ui/hero';
+import InfoList from '~/features/home/components/info-list';
 
-import { Hero, HeroSection } from '@/components/ui/hero';
-import InfoList from '@/app/_components/info-list';
-
-const HeroBio = memo(() => {
+const HeroBio = () => {
   return (
     <Hero hasBackground title="ali ali" className="ml-[5rem] text-start">
       <HeroSection className="ml-[5rem]">
@@ -18,6 +16,6 @@ const HeroBio = memo(() => {
       </HeroSection>
     </Hero>
   );
-});
+};
 
 export default HeroBio;

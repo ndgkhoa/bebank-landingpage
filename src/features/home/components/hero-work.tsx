@@ -1,12 +1,10 @@
-import { memo } from 'react';
+import { Hero, HeroSection } from '~/components/ui/hero';
 
-import { Hero, HeroSection } from '@/components/ui/hero';
-
-const HeroWork = memo(() => {
+const HeroWork = () => {
   return (
     <Hero title="ali ali">
       <HeroSection>
-        <p className="underline">alitwotimes@gmail.com</p>
+        <p className="underline">alitwotimes~gmail.com</p>
         <div className="w-[2rem] leading-none">
           <p className="block text-[3rem] font-semibold">
             Directors Showreel 2024
@@ -23,6 +21,6 @@ const HeroWork = memo(() => {
       </HeroSection>
     </Hero>
   );
-});
+};
 
 export default HeroWork;

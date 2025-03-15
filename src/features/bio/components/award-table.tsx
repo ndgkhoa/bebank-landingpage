@@ -1,8 +1,8 @@
-import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
-import useAwardData from '@/hooks/useAwardData';
+import { Table, TableBody, TableCell, TableRow } from '~/components/ui/table';
+import useAwardList from '~/features/bio/hooks/use-award-list';
 
 const AwardTable = () => {
-  const { data } = useAwardData();
+  const { data } = useAwardList();
 
   return (
     <Table className="w-3/4">

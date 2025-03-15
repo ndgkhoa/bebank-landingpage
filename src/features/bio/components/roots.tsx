@@ -1,9 +1,9 @@
-import { memo, useMemo } from 'react';
+import { useMemo } from 'react';
 
-import Container from '@/components/ui/container';
-import { MediaCard } from '@/app/bio/_components/media-card';
+import Container from '~/components/ui/container';
+import { MediaCard } from '~/components/ui/media-card';
 
-const Roots = memo(() => {
+const Roots = () => {
   const item = useMemo(() => {
     return {
       imageUrl: '/images/family.jpg',
@@ -28,6 +28,6 @@ const Roots = memo(() => {
       </div>
     </Container>
   );
-});
+};
 
 export default Roots;

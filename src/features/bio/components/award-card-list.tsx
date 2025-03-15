@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { MediaCard } from '@/app/bio/_components/media-card';
+import { MediaCard } from '~/components/ui/media-card';
 
 const AwardCardList = () => {
   const item = useMemo(() => {

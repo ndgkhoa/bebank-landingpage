@@ -1,10 +1,8 @@
-import { memo } from 'react';
+import Container from '~/components/ui/container';
+import AwardCardList from '~/features/bio/components/award-card-list';
+import AwardTable from '~/features/bio/components/award-table';
 
-import Container from '@/components/ui/container';
-import AwardCardList from '@/app/bio/_components/award-card-list';
-import AwardTable from '@/app/bio/_components/award-table';
-
-const AwardsRecognitions = memo(() => {
+const AwardsRecognitions = () => {
   return (
     <Container
       contentName="AWARDS & RECOGNITIONS"
@@ -12,9 +10,9 @@ const AwardsRecognitions = memo(() => {
       titleStyle="text-[4rem] font-semibold"
     >
       <AwardCardList />
-      <AwardTable/>
+      <AwardTable />
     </Container>
   );
-});
+};
 
 export default AwardsRecognitions;

@@ -1,9 +1,8 @@
-import { memo } from 'react';
 import Image from 'next/image';
 
-import Container from '@/components/ui/container';
+import Container from '~/components/ui/container';
 
-const SelectedWork = memo(() => {
+const SelectedWork = () => {
   return (
     <Container contentName="SELECTED WORK">
       <div className="grid grid-cols-4 gap-2">
@@ -43,6 +42,6 @@ const SelectedWork = memo(() => {
       </div>
     </Container>
   );
-});
+};
 
 export default SelectedWork;

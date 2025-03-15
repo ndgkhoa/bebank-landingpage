@@ -1,14 +1,15 @@
 import dynamic from 'next/dynamic';
 
-const HeroContact = dynamic(() => import('@/app/contact/_components/hero-contact'));
-const ContactInfo = dynamic(() => import('@/app/contact/_components/contact-info'));
+import PageLayout from '~/components/layout/page-layout';
+const HeroContact = dynamic(() => import('~/features/contact/components/hero-contact'));
+const ContactInfo = dynamic(() => import('~/features/contact/components/contact-info'));
 
 const Contact = () => {
   return (
-    <div className="space-y-[6rem]">
+    <PageLayout>
       <HeroContact />
       <ContactInfo />
-    </div>
+    </PageLayout>
   );
 };
 

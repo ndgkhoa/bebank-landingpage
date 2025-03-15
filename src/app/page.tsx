@@ -1,16 +1,17 @@
 import dynamic from 'next/dynamic';
 
-const HeroWork = dynamic(() => import('@/app/_components/hero-work'));
-const Contact = dynamic(() => import('@/app/_components/contact'));
-const SelectedWork = dynamic(() => import('@/app/_components/selected-work'));
+import PageLayout from '~/components/layout/page-layout';
+const HeroWork = dynamic(() => import('~/features/home/components/hero-work'));
+const Contact = dynamic(() => import('~/features/home/components/contact'));
+const SelectedWork = dynamic(() => import('~/features/home/components/selected-work'));
 
 const Home = () => {
   return (
-    <div className="space-y-[6rem]">
+    <PageLayout>
       <HeroWork />
       <SelectedWork />
       <Contact />
-    </div>
+    </PageLayout>
   );
 };
 

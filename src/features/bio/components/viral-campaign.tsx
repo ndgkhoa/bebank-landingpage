@@ -1,12 +1,11 @@
-import { memo } from 'react';
 import sampleSize from 'lodash/sampleSize';
 
-import Container from '@/components/ui/container';
-import { MediaCard } from '@/app/bio/_components/media-card';
-import useImageData from '@/hooks/useImageData';
+import Container from '~/components/ui/container';
+import { MediaCard } from '~/components/ui/media-card';
+import useImageList from '~/features/home/hooks/use-media-list';
 
-const ViralCampaign = memo(() => {
-  const { data } = useImageData();
+const ViralCampaign = () => {
+  const { data } = useImageList();
   const randomImages = sampleSize(data, 2);
 
   return (
@@ -26,6 +25,6 @@ const ViralCampaign = memo(() => {
       ))}
     </Container>
   );
-});
+};
 
 export default ViralCampaign;
